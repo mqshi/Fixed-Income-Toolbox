@@ -5,6 +5,7 @@ from scipy.optimize import minimize
 
 def Nelson_Siegel(t,b0,b1,b2,t1,t2):
     '''
+    This is a Nelson Siegel 5 factor model
     t: maturity
     b0: beta0
     b1: beta1
@@ -13,6 +14,7 @@ def Nelson_Siegel(t,b0,b1,b2,t1,t2):
     t2: tau2
     return: predicted value of yield
     '''
+    
 
     factor1=(1-exp(-t/t1))/(t/t1)
     factor2=(1-exp(-t/t2))/(t/t2)-exp(-t/t2)
